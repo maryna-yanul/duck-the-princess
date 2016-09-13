@@ -7,15 +7,87 @@
   font-weight: 400;
   font-style: normal;
 }
+@keyframes hero-3 {
+  0% {
+    transform: rotate(0deg) translate(0,0px);
+    transition: transform 1s ease;
+  }
+  50% {
+    transform: rotate(0deg) translate(0px,-30px);
+  }
+  100% {
+    transform: rotate(0deg) translate(0,0);
+    transition: transform 1s ease;
+  }
+}
 a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
 body {
-  background-color: black;
   color: #fff;
+  margin: 0;
+  background-color: lightblue;
 }
+
+@keyframes animatedBackground {
+  0% { 
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10000px 0;
+  }
+}
+@keyframes dragonFly {
+  0% {
+    background-position: 0 0;
+  }
+  100% { 
+    background-position: 5000px 0;
+  }
+}
+
+.bg-img {
+  width: 100%; 
+  height: 190px;
+  background-image: url(../images/mount.svg);
+  background-position: 0px 0px;
+  background-size: cover;
+  animation: animatedBackground 800s linear infinite;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.cloud {
+  width: 100%; 
+  height: 200px;
+  background-image: url(../images/cloud.svg);
+  background-position: 0px 0px;
+  background-size: contain;
+  animation: animatedBackground 400s linear infinite;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.dragon {
+  width: 100%;
+  height: 105px;
+  background-image: url(../images/dragon.svg);
+  background-position: 0px 0px;
+  background-size: contain;
+  position: absolute;
+  animation: dragonFly 12s linear infinite;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.dragon-with {
+  position: absolute;
+  left: -200px;
+  right: 0;
+}
+
 .copy {
   position: fixed;
   bottom: 0;
@@ -25,9 +97,11 @@ body {
   text-align: -webkit-right;
   background-color: #000;
   opacity: 0.5;
+  z-index: 10;
 }
 
 .teke-hero {
+  z-index: 10;
   font-family: 'Zhizn';
   margin-bottom: 50px;
 }
@@ -43,12 +117,14 @@ body {
   background-size: 100%;
   margin: 0 auto;
   background-repeat: no-repeat;
+  z-index: 100;
 }
 .choose-hero {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 100px;
+  z-index: 10;
 }
 
 .choose-hero--block {
@@ -58,15 +134,18 @@ body {
   padding: 10px;
   background-color: #404040;
   cursor: pointer;
+  z-index: 10;
 }
 .choose-hero--block:hover {
   background-color: #191919;
+
 }
 .choose-img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   display: block;
+  z-index: 10;
 }
 .step-right {
   margin-right: 50px;
@@ -78,7 +157,9 @@ body {
   display: block;
   margin-top: 40px;
 }
-
+.choose-hero--block:hover {
+  animation: hero-3 0.3s linear 2;
+}
 
 @media (max-width: 991px) {
   .choose-hero {
@@ -96,23 +177,3 @@ body {
     margin: 0 auto;
   }
 }
-
-@keyframes hero-3 {
-  0% {
-    transform: rotate(0deg) translate(0,0px);
-    transition: transform 1s ease;
-  }
-  50% {
-    transform: rotate(0deg) translate(0px,-30px);
-  }
-  100% {
-    transform: rotate(0deg) translate(0,0);
-    transition: transform 1s ease;
-  }
-}
-
-.choose-hero--block:hover {
-  animation: hero-3 0.3s linear 2;
-}
-
-

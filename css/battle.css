@@ -7,3 +7,146 @@
   font-weight: 400;
   font-style: normal;
 }
+@keyframes cavalierGo {
+  0% {
+    transform: translate(-600px,0);
+  }
+  50% {
+    transform: translate(-300px,0);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+@keyframes axkill {
+  0% {
+    transform: rotateX(0deg) translate(300px,4px);
+    transition: transform 1s ease;
+  }
+  100% {
+    transform: rotateZ(74deg) rotateY(-10deg) translate(1218px,-1300px);
+  }
+}
+
+
+@keyframes helmetkill {
+  0% {
+    transform: rotateZ(-1deg) rotateY(0) translate(-18px,385px);
+  }
+  100% {
+    transform: rotateZ(106deg) rotateY(0) translate(1347px,-1817px);
+    transition: transform 1s ease;
+  }
+}
+
+
+@keyframes dragonGo {
+  0% {
+    transform: translate(600px,0);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+@keyframes dragonleg {
+  0% {
+    transform: rotateX(-13deg) translate(-1px,484px);
+    transition: transform 1s ease;
+  }
+  50% {
+    transform: rotateX(-13deg) translate(7px,500px);
+  }
+  100% {
+    transform: rotateX(-13deg) translate(-1px,484px);
+  }
+}
+
+@keyframes dragonleg1 {
+  0% {
+    transform: rotateZ(-32deg) translate(-309px,-16px);
+    transition: transform 1s ease;
+  }
+  50% {
+    transform: rotateZ(-32deg) translate(-300px,-10px);
+  }
+  100% {
+    transform: rotateZ(-32deg) translate(-309px,-16px);
+  }
+}
+
+@keyframes fireshow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+     opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.castle {
+  background-image: url(../images/fon.svg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-top: 10px;
+}
+.platform {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffdb05;
+  height: 40px;
+}
+.cavalier {
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  bottom: 0;
+  z-index: 10;
+  left: 400px;
+  animation: cavalierGo 4s linear 1;
+}
+
+.ax {
+  animation: axkill 4s linear 1;
+  transform: rotateZ(74deg) rotateY(-10deg) translate(1218px,-1300px);
+}
+
+.helmet {
+  animation: helmetkill 4s linear 1;
+  transform: rotateZ(106deg) rotateY(0) translate(1347px,-1817px);
+}
+
+
+.dragon-battle {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  right: 0;
+  animation: dragonGo 4s linear 1;
+}
+
+g#нога {
+  animation: dragonleg 1s linear 4;
+  transform: rotateX(-13deg) translate(7px,500px);
+}
+use#Rectangle-33 {
+  transform: rotateZ(-32deg) translate(-309px,-16px);
+  animation: dragonleg1 1s linear 4;
+}
+.fire {
+  top: 496px;
+  right: 342px;
+  position: relative;
+  transform: rotateZ(-7deg);
+  animation: fireshow 1s linear 3;
+  opacity: 1;
+}

@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="724px" height="619px" viewBox="0 0 724 619" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
-    <title>love</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M343.999997,618.316787 C343.999997,618.316787 388.353313,550.433236 473.745816,493.396346 C635.431569,385.400304 802.418956,227.94731 681.781937,88.5230909 C497.43184,-124.536454 344,120.481318 344,120.481318 C344,120.481318 200.233289,-109.609262 35.3543634,88.5230927 C-129.524562,286.655447 343.999997,618.316787 343.999997,618.316787 Z" id="love" stroke="#979797" fill="#FE1616"></path>
-    </g>
-</svg>
+<svg width="724" height="619" viewBox="0 0 724 619" xmlns="http://www.w3.org/2000/svg"><title>love</title><path d="M344 618.317s44.353-67.884 129.746-124.92C635.432 385.4 802.419 227.946 681.782 88.522 497.432-124.537 344 120.481 344 120.481S200.233-109.609 35.354 88.523C-129.525 286.655 344 618.317 344 618.317z" stroke="#979797" fill="#FE1616" fill-rule="evenodd"/></svg>
