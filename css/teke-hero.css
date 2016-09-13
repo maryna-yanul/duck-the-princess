@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Zhizn';
+  src: local('Zhizn'),
+  url('../fonts/zhizn.woff2') format('woff2'),
+  url('../fonts/zhizn.woff') format('woff'),
+  url('../fonts/zhizn.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+body {
+  background-color: black;
+  color: #fff;
+}
+.copy {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  left: 0;
+  text-align: -webkit-right;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.teke-hero {
+  font-family: 'Zhizn';
+  margin-bottom: 50px;
+}
+.title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.sword {
+  background-image: url('../images/sword.svg');
+  width: 300px;
+  height: 60px;
+  background-size: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+.choose-hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.choose-hero--block {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #404040;
+  cursor: pointer;
+}
+.choose-hero--block:hover {
+  background-color: #191919;
+}
+.choose-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+.step-right {
+  margin-right: 50px;
+}
+.secret {
+  font-size: 150px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+}
+
+
+@media (max-width: 991px) {
+  .choose-hero {
+    flex-direction: column;
+  }
+  .choose-hero--block {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .step-right {
+    margin-right: 0;
+  }
+  .link-hero {
+    width: 250px;
+    margin: 0 auto;
+  }
+}
+
+@keyframes hero-3 {
+  0% {
+    transform: rotate(0deg) translate(0,0px);
+    transition: transform 1s ease;
+  }
+  50% {
+    transform: rotate(0deg) translate(0px,-30px);
+  }
+  100% {
+    transform: rotate(0deg) translate(0,0);
+    transition: transform 1s ease;
+  }
+}
+
+.choose-hero--block:hover {
+  animation: hero-3 0.3s linear 2;
+}
+
+

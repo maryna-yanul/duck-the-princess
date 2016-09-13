@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'Zhizn';
+  src: local('Zhizn'),
+  url('../fonts/zhizn.woff2') format('woff2'),
+  url('../fonts/zhizn.woff') format('woff'),
+  url('../fonts/zhizn.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes wing {
+  0% {
+    transform: rotate(31deg) translate(72px,-189px);
+    transition: transform 1s ease;
+  }
+  50% {
+        transform: rotate(30.5deg) translate(72px,-190px);
+  }
+  100% {
+    transform: rotate(31deg) translate(72px,-189px);
+    transition: transform 1s ease;
+  }
+}
+
+@keyframes wink {
+  0% {
+    transform: rotateX(0deg);
+    transition: transform 1s ease;
+  }
+  50% {
+    transform: rotateX(-71deg) translate(0,100px);
+  }
+  100% {
+    transition: transform 1s ease;
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes wink-fade {
+  0% {
+    opacity: 1
+    transition: opacity 1s ease;
+  }
+  50% {
+     opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes crown {
+  0% {
+    transform: scale(1) translate(0,0);
+    transition: transform 1s ease;
+  }
+  50% {
+     transform: scale(1.2) translate(-11px,-15px);
+  }
+  100% {
+    transform: scale(1) translate(0,0);
+  }
+}
+
+@keyframes legprincess{
+  0% {
+    transform: scale(1) translate(0,0);
+    transition: transform 1s ease;
+  }
+  50% {
+     transform: rotateX(20deg) translate(2px,2px);
+  }
+  100% {
+    transform: scale(1) translate(0,0);
+  }
+}
+
+@keyframes goPrincess {
+  0% {
+    transform: rotateX(20deg) translate(220px,0px);
+    transition: transform 1s ease;
+  }
+  50% {
+     transform: rotateX(20deg) scale(1) translate(0px,0px);
+  }
+  100% {
+    transform: rotateX(20deg) scale(1) translate(0,0);
+  }
+}
+
+@keyframes goPrince {
+  0% {
+    transform: rotateX(20deg) translate(-220px,0px);
+    transition: transform 1s ease;
+  }
+  50% {
+     transform: rotateX(20deg) scale(1) translate(0px,0px);
+  }
+  100% {
+    transform: rotateX(20deg) scale(1) translate(0,0);
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease;
+  }
+  50% {
+     opacity: 0.4;
+     transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes loveText {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease;
+  }
+  50% {
+     opacity: 0.6;
+     transform: scale(1.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.text-love {
+  animation: loveText 5s 4s linear 1;
+  text-align: center;
+  position: absolute;
+  margin-top: 180px;
+  left: 0;
+  right: 0;
+  font-size: 115px;
+  color: #fff;
+  font-family: 'Zhizn';
+}
+.princess {
+  animation: goPrincess 4s linear 1;
+  animation-iteration-count: 1;
+  right: 0;
+  z-index: 10;
+  margin-right: 300px;
+}
+.prince {
+  animation: goPrince 4s linear 1;
+  animation-iteration-count: 1;
+  left: 0;
+  z-index: 10;
+  margin-left: 300px;
+}
+.prince, .princess {
+  position: absolute;
+  bottom: 0;
+}
+.love {
+  animation: heart 2s linear 2;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+use#Rectangle-9 {
+  animation: crown 2s linear infinite;
+}
+
+g#корона path {
+  animation: wink-fade 2s linear infinite;
+}
+
+path#Oval-5 {
+  animation: legprincess 0.5s linear infinite;
+}
+path#Oval-55 {
+  animation: legprincess 0.5s 0.2s linear infinite;
+}

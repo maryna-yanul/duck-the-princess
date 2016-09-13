@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Zhizn';
+  src: local('Zhizn'),
+  url('../fonts/zhizn.woff2') format('woff2'),
+  url('../fonts/zhizn.woff') format('woff'),
+  url('../fonts/zhizn.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
