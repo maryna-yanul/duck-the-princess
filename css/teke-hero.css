@@ -161,6 +161,14 @@ body {
   animation: hero-3 0.3s linear 2;
 }
 
+#hero2, #hero3  {
+  display: none;
+}
+
+.show-hero {
+  display: block !important;
+}
+
 @media (max-width: 991px) {
   .choose-hero {
     flex-direction: column;

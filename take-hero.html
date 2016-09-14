@@ -21,14 +21,16 @@
             <img class="choose-img" src="images/hero-1.svg">
           </div>
         </a>
-        <a class="link-hero step-right" href="unicorn-battle.html">
+        <a class="link-hero step-right" id="link--battle2" href="#">
           <div class="choose-hero--block">
-            <img class="choose-img" src="images/unicorn-hero.svg">
+            <img id="hero2" class="choose-img" src="images/unicorn-hero.svg">
+            <span class="secret" id="secret1">?</span>
           </div>
         </a>
-        <a class="link-hero" href="index.html">
+        <a class="link-hero" id="link--battle3" href="#">
           <div class="choose-hero--block">
-            <span class="secret">?</span>
+            <img id="hero3" class="choose-img" src="images/hero-3.svg">
+            <span class="secret" id="secret2">?</span>
           </div>
         </a>
       </div>
@@ -37,5 +39,18 @@
       </a>
     </div>
     <div class="bg-img"></div>
+    <script type="text/javascript">
+      if(localStorage.getItem('hero2') === 'true') {
+        document.getElementById("hero2").className = "choose-img show-hero";
+        document.getElementById('secret1').style.display = "none";
+        document.getElementById("link--battle2").href = "unicorn-battle.html";
+      }
+
+      if(localStorage.getItem('hero3') === 'true') {
+        document.getElementById("hero3").className = "choose-img show-hero";
+        document.getElementById('secret2').style.display = "none";
+        document.getElementById("link--battle3").href = "duck-battle.html";
+      }
+    </script>
   </body>
 </html>

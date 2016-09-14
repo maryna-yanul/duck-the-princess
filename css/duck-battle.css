@@ -1,0 +1,53 @@
+@keyframes shot-a {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.duck {
+  position: absolute;
+  bottom: 0;
+}
+
+#weapons {
+  display: none;
+  width: 100px;
+  position: absolute;
+  bottom: 26px;
+  transform: rotate(-20deg);
+  left: 91px;
+  z-index: 11;
+  
+}
+.weapons--animate {
+  display: block !important;
+}
+
+#shot {
+  display: none;
+}
+.shot {
+  width: 544px;
+  position: absolute;
+  bottom: 134px;
+  left: 200px;
+  transform: rotate(-20deg);
+}
+.shot--animate {
+  display: block !important;
+}
+
+path.a {
+  animation: shot-a 1s linear infinite;
+}
+path.b {
+  animation: shot-a 1s 1s linear infinite;
+}
+path.c {
+  animation: shot-a 2.5s 1s linear infinite;
+}
