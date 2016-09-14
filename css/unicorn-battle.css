@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'Zhizn';
+  src: local('Zhizn'),
+  url('../fonts/zhizn.woff2') format('woff2'),
+  url('../fonts/zhizn.woff') format('woff'),
+  url('../fonts/zhizn.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes unicornGo {
+  0% {
+    transform: translate(0px,0);
+    transition: transform 1s ease;
+  }
+  50% {
+    transform: translate(600px,430px);
+    transition: transform 1s ease;
+  }
+  80% {
+    transform: translate(600px,430px);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+@keyframes unicornkill {
+  0% {
+    transform: rotate(0deg);
+  }
+  99% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-150deg);
+  }
+}
+
+@keyframes rainbowShow {
+  0% {
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.2;
+    transition: opacity 1s ease;
+  }
+}
+
+@keyframes leg1 {
+  0% {
+    transform: rotateX(0deg) translate(666px,1056px);
+    transition: transform 1s ease;
+  }
+  50% {
+     transform: rotateX(20deg) translate(700px,1100px);
+  }
+  100% {
+    transform: rotateX(0deg) translate(666px,1056px);
+  }
+}
+
+@keyframes leg2 {
+  0% {
+    transform: rotateX(0deg) translate(1666px,1480px);
+    transition: transform 1s ease;
+  }
+  50% {
+    transform: rotateX(0deg) translate(1696px,1500px);
+  }
+  100% {
+    transform: rotateX(0deg) translate(1666px,1480px);
+  }
+}
+
+@keyframes leg3 {
+  0% {
+    transform: rotateX(0deg) translate(1542px,1502px);
+    transition: transform 1s ease;
+  }
+  50% {
+    transform: rotateX(0deg) translate(1586px,1506px);
+  }
+  100% {
+    transform: rotateX(0deg) translate(1542px,1502px);
+  }
+}
+
+@keyframes leg4 {
+  0% {
+    transform: rotateX(0deg) translate(498px,1147px);
+    transition: transform 1s ease;
+  }
+  50% {
+    transform: rotateX(0deg) translate(530px,1197px);
+  }
+  100% {
+    transform: rotateX(0deg) translate(498px,1147px);
+  }
+}
+
+#unicorn-hero {
+  display: none;
+}
+.unicorn-hero {
+  position: absolute;
+  display: block !important;
+  width: 237px;
+  bottom: 425px;
+  z-index: 10;
+  left: -250px;
+  animation: unicornGo 6s linear 1;
+}
+.unicorn-rotate {
+  animation: unicornkill 3s linear 1;
+  transform: rotate(-150deg);
+}
+#rainbow {
+  opacity: 1;
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  left: -271px;
+  width: 280px;
+  transform: rotate(0deg);
+}
+
+.rainbow--animate {
+  animation: rainbowShow 9s linear 1;
+  transition: opacity 1s ease;
+}
+.tuguduk1 {
+  animation: leg1 2s linear 2;
+}
+
+.tuguduk2 {
+  animation: leg2 2s linear 2;
+}
+
+.tuguduk3 {
+  animation: leg3 2s linear 2;
+}
+
+.tuguduk4 {
+  animation: leg4 2s linear 2;
+}

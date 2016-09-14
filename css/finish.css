@@ -14,7 +14,7 @@
     transition: transform 1s ease;
   }
   50% {
-        transform: rotate(30.5deg) translate(72px,-190px);
+    transform: rotate(30.5deg) translate(72px,-190px);
   }
   100% {
     transform: rotate(31deg) translate(72px,-189px);

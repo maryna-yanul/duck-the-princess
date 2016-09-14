@@ -7,42 +7,6 @@
   font-weight: 400;
   font-style: normal;
 }
-@keyframes cavalierGo {
-  0% {
-    transform: translate(-600px,0);
-  }
-  50% {
-    transform: translate(-300px,0);
-  }
-  100% {
-    transform: translate(0,0);
-  }
-}
-
-@keyframes axkill {
-  0% {
-    transform: rotateX(0deg) translate(300px,4px);
-    transition: transform 1s ease;
-  }
-  100% {
-    transform: rotateZ(74deg) rotateY(-10deg) translate(1218px,-1300px);
-  }
-}
-
-
-@keyframes helmetkill {
-  0% {
-    transform: rotateZ(-1deg) rotateY(0) translate(-18px,385px);
-  }
-  50% {
-    transform: rotateZ(-1deg) rotateY(0) translate(-18px,385px);
-  }
-  100% {
-    transform: rotateZ(106deg) rotateY(0) translate(1347px,-1817px);
-    transition: transform 1s ease;
-  }
-}
-
 
 @keyframes dragonGo {
   0% {
@@ -108,14 +72,6 @@
   background-color: #ffdb05;
   height: 40px;
 }
-.cavalier {
-  position: absolute;
-  width: 500px;
-  height: 350px;
-  bottom: 0;
-  z-index: 10;
-  left: 400px;
-}
 
 .dragon-battle {
   position: absolute;
@@ -133,22 +89,8 @@
   transition: transform 1s ease;
 }
 
-#cavalier, #dragon-battle, #fire {
+#dragon-battle, #fire {
   display: none;
-}
-.cavalier--animate {
-  display: block !important;
-  animation: cavalierGo 4s linear 1;
-}
-
-.ax {
-  animation: axkill 4s linear 1;
-  transform: rotateZ(74deg) rotateY(-10deg) translate(1218px,-1300px);
-}
-
-.helmet {
-  animation: helmetkill 4s linear 1;
-  transform: rotateZ(106deg) rotateY(0) translate(1347px,-1817px);
 }
 
 .dragon-battle--animate {
