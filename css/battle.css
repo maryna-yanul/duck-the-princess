@@ -34,6 +34,9 @@
   0% {
     transform: rotateZ(-1deg) rotateY(0) translate(-18px,385px);
   }
+  50% {
+    transform: rotateZ(-1deg) rotateY(0) translate(-18px,385px);
+  }
   100% {
     transform: rotateZ(106deg) rotateY(0) translate(1347px,-1817px);
     transition: transform 1s ease;
@@ -66,13 +69,13 @@
 @keyframes dragonleg1 {
   0% {
     transform: rotateZ(-32deg) translate(-309px,-16px);
-    transition: transform 1s ease;
   }
-  50% {
+  99% {
     transform: rotateZ(-32deg) translate(-300px,-10px);
   }
   100% {
     transform: rotateZ(-32deg) translate(-309px,-16px);
+    transition: transform 1s ease;
   }
 }
 
@@ -112,6 +115,29 @@
   bottom: 0;
   z-index: 10;
   left: 400px;
+}
+
+.dragon-battle {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  right: 0;
+}
+
+.fire {
+  top: 496px;
+  right: 342px;
+  position: relative;
+  transform: rotateZ(-7deg);
+  opacity: 1;
+  transition: transform 1s ease;
+}
+
+#cavalier, #dragon-battle, #fire {
+  display: none;
+}
+.cavalier--animate {
+  display: block !important;
   animation: cavalierGo 4s linear 1;
 }
 
@@ -125,28 +151,23 @@
   transform: rotateZ(106deg) rotateY(0) translate(1347px,-1817px);
 }
 
-
-.dragon-battle {
-  position: absolute;
-  bottom: 0;
-  z-index: 10;
-  right: 0;
+.dragon-battle--animate {
+  display: block !important;
   animation: dragonGo 4s linear 1;
 }
 
+.fire--animate {
+  display: block !important;
+  animation: fireshow 1s linear 2;
+}
+
 g#нога {
+  display: block;
   animation: dragonleg 1s linear 4;
   transform: rotateX(-13deg) translate(7px,500px);
 }
 use#Rectangle-33 {
+  display: block;
   transform: rotateZ(-32deg) translate(-309px,-16px);
   animation: dragonleg1 1s linear 4;
-}
-.fire {
-  top: 496px;
-  right: 342px;
-  position: relative;
-  transform: rotateZ(-7deg);
-  animation: fireshow 1s linear 3;
-  opacity: 1;
 }

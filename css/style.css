@@ -34,7 +34,7 @@ body {
 }
 .button-start {
   cursor: pointer;
-  position: absolute;
+  /*position: absolute;*/
   background-image: url('../images/crown.svg');
   background-size: 25px;
   width: 100px;
