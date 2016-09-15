@@ -131,13 +131,18 @@
     transform: scale(1);
   }
 }
+
+.happy-end {
+  background-color: aquamarine;
+}
 .text-love {
   animation: loveText 5s 4s linear 1;
   text-align: center;
   position: absolute;
   margin-top: 180px;
-  left: 0;
-  right: 0;
+  left: 400px;
+  right: 400px;
+  word-break: break-all;
   font-size: 115px;
   color: #fff;
   font-family: 'Zhizn';

@@ -9,6 +9,17 @@
     opacity: 0;
   }
 }
+
+@keyframes glasses {
+  0% {
+    transform: translate(0px,-100px);
+  }
+  100% {
+    transform: translate(0px,0px);
+  }
+      
+}
+
 .duck {
   position: absolute;
   bottom: 0;
@@ -21,10 +32,21 @@
   bottom: 26px;
   transform: rotate(-20deg);
   left: 91px;
-  z-index: 11;
-  
+  z-index: 11; 
 }
 .weapons--animate {
+  display: block !important;
+}
+#glasses {
+  position: absolute;
+  width: 67px;
+  bottom: 83px;
+  left: 94px;
+  z-index: 12;
+  display: none;
+}
+.glasses--animate {
+  animation: glasses 1s linear 1;
   display: block !important;
 }
 

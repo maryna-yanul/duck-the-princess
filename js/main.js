@@ -21,4 +21,6 @@ function battleDuck() {
   document.getElementById("dragon-battle").className = "dragon-battle dragon-battle--animate";
   setTimeout(function() { document.getElementById("weapons").className = "weapons--animate" } , 3500);
   setTimeout(function() { document.getElementById("shot").className = "shot--animate" } , 4000);
+  setTimeout(function() { document.getElementById("glasses").className = "glasses--animate" } , 5000);
+  setTimeout(function() { document.location.href='finish.html'} , 8000);
 }
